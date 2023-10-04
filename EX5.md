@@ -20,5 +20,6 @@
 ### PLSQL Trigger code
 
 ### Output:
+![image](https://github.com/dineshgl/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/3444d18e-f075-4619-93b8-c6b6676aa033)
 
 ### Result:
