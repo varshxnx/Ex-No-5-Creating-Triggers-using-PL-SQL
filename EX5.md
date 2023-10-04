@@ -22,3 +22,5 @@
 ### Output:
 
 ### Result:
+![image](https://github.com/dineshgl/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/837f2810-31a1-40f1-94cb-9277ada20897)
+
