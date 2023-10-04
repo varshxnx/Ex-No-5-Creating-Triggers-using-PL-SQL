@@ -14,80 +14,33 @@
 
 ### Program:
 ```
-CREATE TABLE employed(
-  empid NUMBER,
-  empname VARCHAR2(10),
-  dept VARCHAR2(10),
-  salary NUMBER
-);
+CREATE TABLE employee2( empid NUMBER,empname VARCHAR2(10),dept VARCHAR2(10),salary NUMBER);
 
-CREATE TABLE sal_log (
-  log_id NUMBER GENERATED ALWAYS AS IDENTITY,
-  empid NUMBER,
-  empname VARCHAR2(10),
-  old_salary NUMBER,
-  new_salary NUMBER,
-  update_date DATE
-);
--- Insert the values in the employee table
-insert into employedd values(1,'Shakthi','IT',1000000);
-insert into employedd values(2,'Suji','SALES',500000)
+CREATE TABLE sal_log (log_id NUMBER GENERATED ALWAYS AS IDENTITY, empid NUMBER, empname VARCHAR2(10), old_salary NUMBER, new_salary NUMBER,update_date DATE);
+
+insert into employee2 values(1,'John','HR',50000);
+insert into employee2 values(2,'Joe','IT',60000);
+insert into employee2 values(3,'Bob','Finance',55000);
 ```
 
 ### Create employee table
-```CREATE TABLE employed(
-  empid NUMBER,
-  empname VARCHAR2(10),
-  dept VARCHAR2(10),
-  salary NUMBER
-);
+```
+CREATE TABLE employee(empid NUMBER, empname VARCHAR2(10), dept VARCHAR2(10), salary NUMBER);
 ```
 
 ### Create salary_log table
 ```
-CREATE TABLE sal_log (
-  log_id NUMBER GENERATED ALWAYS AS IDENTITY,
-  empid NUMBER,
-  empname VARCHAR2(10),
-  old_salary NUMBER,
-  new_salary NUMBER,
-  update_date DATE
-);
+CREATE TABLE salary_log (log_id NUMBER,empid NUMBER,empname VARCHAR2(10),old_salary NUMBER,new_salary NUMBER,update_date DATE);
 ```
 
 
 ### PLSQL Trigger code
-```
--- Create the trigger
-CREATE OR REPLACE TRIGGER log_sal_update
-BEFORE UPDATE ON employed
-FOR EACH ROW
-BEGIN
-  IF :OLD.salary != :NEW.salary THEN
-    INSERT INTO sal_log (empid, empname, old_salary, new_salary, update_date)
-    VALUES (:OLD.empid, :OLD.empname, :OLD.salary, :NEW.salary, SYSDATE);
-  END IF;
-END;
-/
--- Insert the values in the employee table
-insert into employed values(1,'Shakthi','IT',1000000);
-insert into employed values(2,'Suji','SALES',500000);
+![5i](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/34ac784f-e1d7-49d8-baf6-274c3b3ecfe6)
 
--- Update the salary of an employee
-UPDATE employedd
-SET salary = 60000
-WHERE empid = 1;
--- Display the employee table
-SELECT * FROM employedd;
 
--- Display the salary_logg table
-SELECT * FROM sal_logg;
-```
-
-### Output:
-![image](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/c22a1002-550e-4dfd-9ec3-69b4c34d4ab7)
-
+### Output
+![5o](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/f23ecdd1-7d41-42c6-bbeb-07590c7ec242)
 
 
 ### Result:
-Thus , the output has been successfully verified.
+Therefore the output has been successfully verified.
