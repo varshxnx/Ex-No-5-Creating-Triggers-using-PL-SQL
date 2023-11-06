@@ -22,25 +22,19 @@ insert into employee2 values(1,'John','HR',50000);
 insert into employee2 values(2,'Joe','IT',60000);
 insert into employee2 values(3,'Bob','Finance',55000);
 ```
-
 ### Create employee table
 ```
 CREATE TABLE employee(empid NUMBER, empname VARCHAR2(10), dept VARCHAR2(10), salary NUMBER);
 ```
-
 ### Create salary_log table
 ```
 CREATE TABLE salary_log (log_id NUMBER,empid NUMBER,empname VARCHAR2(10),old_salary NUMBER,new_salary NUMBER,update_date DATE);
 ```
-
-
 ### PLSQL Trigger code
 ![5i](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/34ac784f-e1d7-49d8-baf6-274c3b3ecfe6)
 
-
 ### Output
 ![5o](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/f23ecdd1-7d41-42c6-bbeb-07590c7ec242)
-
 
 ### Result:
 Therefore the output has been successfully verified.
