@@ -33,6 +33,9 @@ CREATE TABLE salary_log (log_id NUMBER,empid NUMBER,empname VARCHAR2(10),old_sal
 ### PLSQL Trigger code
 ![5i](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/34ac784f-e1d7-49d8-baf6-274c3b3ecfe6)
 
+
+
+
 ### Output
 ![5o](https://github.com/varshxnx/Ex-No-5-Creating-Triggers-using-PL-SQL/assets/122253525/f23ecdd1-7d41-42c6-bbeb-07590c7ec242)
 
